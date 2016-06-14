@@ -1,0 +1,140 @@
+.product-thumb-row {
+	.product-thumbs {
+		@media screen and (max-width: 450px) {
+			width: 100%;		
+		}
+		
+		img {
+			margin: 0 auto;	
+			margin-bottom: 10px;
+		}
+		
+		.product-description-container {
+			width: 246px;
+			margin: 0 auto;
+			
+			h4 {			
+				
+			}	
+		}		
+	}
+}
+
+.quote-form-container {
+	position: fixed;
+	bottom: -100%;
+	margin-bottom: 50px;
+	left: 0;
+	display:block;
+	width: 100%;
+	height: 900px;
+	overflow: hidden;
+	background-color: #25c0e5;
+	
+	@media screen and (min-width:1000px) {
+		display: none;
+	}
+	
+	.quote-form-header {  
+		width: 100%;
+		height: 50px;		
+		padding-top: 8px;
+		cursor: pointer;
+		background-color: blue;
+		
+		&:hover {
+			background-color: red;			
+		}
+		
+		.form-header-button-text {
+			text-align: center;
+			color: #fff;
+			font-size: 25px;
+		}
+	}
+	
+	.quote-form {
+		background-color: greenyellow;
+	}
+}
+
+.alternating-feature-rows-container {
+	.feature-row {
+		margin-bottom: 20px;
+		
+		.feature-col-img {
+			height: 0;
+			padding: 0;
+			padding-bottom: 75%; /* for a 4:3 aspect ratio */
+			background-image: url("http://placehold.it/1000x800");			
+			background-position: center center;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			float: none;
+			
+			@media screen and (min-width:768px) {
+				width: 48%;
+				padding-bottom: 45%;
+				float: left;
+			}
+		}
+		
+		.feature-col-copy {
+			width: 100%;						
+			
+			@media screen and (min-width:768px) {
+				width: 48%;
+				float: left;
+				margin-left: 20px; 
+			}
+		}
+	}
+}
+
+.modal-button-container {
+	display: block;
+	margin-bottom: 80px;
+	
+}
+
+.product-details-modal {
+	.modal-content {
+		padding: 20px;
+	}
+}
+
+.product-image-container {
+	width: 100%;
+	
+    .img-responsive {  		
+		clear: both;
+		max-width: 250px;
+		margin: 0 auto;
+		
+		@media screen and (min-width:540px) {
+			float: left;	
+			margin-left: 0;
+		}
+    }
+}
+
+.product-details-container {    
+    .product-name {
+		float: left;
+		margin-right:  30px;
+    }
+}
+
+.contest-entry-modal {
+	.modal-content {
+		button {
+			float: right;
+		}
+		
+		h3 {
+			text-align: center;
+		}
+	}	
+}
+
+
